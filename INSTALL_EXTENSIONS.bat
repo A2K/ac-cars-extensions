@@ -80,7 +80,7 @@ for %%c in (%detectedCars%) do (
                 set doInstall=Y
             )
             if "!doInstall!" == "Y" (
-                echo robocopy %~dp0assettocorsa\content\cars\!%%f!\extension %basePath%\%%c\extension /E
+                robocopy %~dp0assettocorsa\content\cars\!%%f!\extension %basePath%\%%c\extension /E
             ) else (
                 echo Skipping !carname!
             )

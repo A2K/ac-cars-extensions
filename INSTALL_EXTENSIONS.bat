@@ -38,6 +38,10 @@ if "!InstallLocation!" == "" (
 
 echo Assetto Corsa root folder: %InstallLocation%
 
+echo Installing shared content to %InstallLocation%\extension\textures\common
+
+robocopy %~dp0assettocorsa\extension\textures\common\a2k %InstallLocation%\extension\textures\common\a2k /E
+
 set "installAll="
 
 set "basePath=%InstallLocation%\content\cars"

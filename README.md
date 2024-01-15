@@ -4,12 +4,13 @@
 
 
 ### Includes:
-#### All BMWs:
+#### For ALL BMWs:
 * New interior textures and materials
-* Subdivided geometry and more interior material variety
-* High resolution dashboards
+* Subdivided geometry: rounder steering wheels and smoother dashboard curves
+* More interior materials variety
+* High resolution instruments and dashboards
 * Working dashboard icons for all cars: warnings, headlights, high beams, ABS, TC, DTC, MDM - all of them.
-* Working turn signals
+* Working turn signals: exterior lights, dashboard icons and hazards button.
 * Working odometers
 
 #### Extra for BMW E30 and E30 DTM1992 variants:

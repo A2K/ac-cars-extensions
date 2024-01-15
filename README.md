@@ -1,4 +1,4 @@
-### Extract and run **INSTALL_EXTENSIONS.bat** to install!
+### Extract to a temporary directory and run **INSTALL_EXTENSIONS.bat** to install!
 
 ### ⚠️ Do not install using Content Manager!
 

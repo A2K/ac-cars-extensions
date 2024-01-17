@@ -3,7 +3,7 @@
 
 
 ### Extract to a temporary directory and run `INSTALL_EXTENSIONS.bat` to install!
-#### The script copies the shared textures, scans the installed cars and offers lets you decide what cars to install extensions for.
+#### The script copies the shared textures, scans the installed cars and offers to decide what cars to install extensions for.
 ##### Alternatively, copy coresponding `extension` directory from `content/cars/a2k_*` to desired car's directory manually. If installing manually, the shared content needs to be installed for extensions to work (`extension/textures/common/a2k`).
 
 ### ⚠️ Do not install using Content Manager!

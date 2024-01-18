@@ -3,7 +3,7 @@
 
 
 ### Extract to a temporary directory and run `INSTALL_EXTENSIONS.bat` to install!
-#### The script copies the shared textures, scans the installed cars and offers to decide what cars to install extensions for.
+#### The script copies the shared textures, scans the installed cars and offers to decide which cars to install extensions for.
 ##### Alternatively, copy coresponding `extension` directory from `content/cars/a2k_*` to desired car's directory manually. If installing manually, the shared content needs to be installed for extensions to work (`extension/textures/common/a2k`).
 
 ### ⚠️ Do not install using Content Manager!
@@ -48,7 +48,7 @@
 | ks_bmw_m4           | [a2k_bmw_f82_2015_m4](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_f82_2015_m4)         |
 | ks_bmw_m4_akrapovic | [a2k_bmw_f82_2015_m4](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_f82_2015_m4)         |
 
-#### Arch cars
+### [Arch physics](https://github.com/archibaldmilton/Girellu/tree/master/Releases/Mods/Arch%20Cars%20Public) is supported and recommended
 | Car directory name           | Extension                   |
 | ---------------------------- | --------------------------- |
 | arch_bmw_e30_1986_m3         | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |

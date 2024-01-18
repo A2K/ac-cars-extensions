@@ -27,7 +27,7 @@
 
 ### Manual installation:
 * Extract `assettocorsa/extension/textures/common/a2k` to coresponding path in your game install
-* Copy the extensions to car directories using compatibility table provided below
+* Copy the extensions from `a2k_*` cars to cars of your choise using compatibility table provided below
   
 ### Supported cars
 

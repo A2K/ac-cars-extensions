@@ -25,6 +25,11 @@
 #### Extra for BMW E92 M3 variants:
 * Aftermarket Android Auto
 
+
+# 🌐 100% Compatible with online play!
+###### Extensions don't affect car checksums as they don't affect physics.
+
+
 ### Manual installation:
 * Extract `assettocorsa/extension/textures/common/a2k` to coresponding path in your game install
 * Copy the extensions from `a2k_*` cars to cars of your choise using compatibility table provided below

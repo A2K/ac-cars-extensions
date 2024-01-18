@@ -34,7 +34,7 @@
 #### Kunos BMW
 | Car directory name  | Extension                   |
 | ------------------- | --------------------------- |
-| bmw_1m              | [a2k_bmw_e82_2011_1m](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)         |
+| bmw_1m              | [a2k_bmw_e82_2011_1m](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e82_2011_1m)         |
 | bmw_1m_s3           | [a2k_bmw_e82_2011_1m](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e82_2011_1m)         |
 | bmw_m3_e30          | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
 | bmw_m3_e30_drift    | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |

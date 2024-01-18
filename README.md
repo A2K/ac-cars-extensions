@@ -25,11 +25,11 @@
 #### Extra for BMW E92 M3 variants:
 * Aftermarket Android Auto
 
-Manual installation:
-* Extract assettocorsa/extension/textures/common/a2k to coresponding path in your game install
+### Manual installation:
+* Extract `assettocorsa/extension/textures/common/a2k` to coresponding path in your game install
 * Copy the extensions to car directories using compatibility table provided below
   
-#### Supported cars
+### Supported cars
 
 #### Kunos BMW
 | Car directory name  | Extension                   |

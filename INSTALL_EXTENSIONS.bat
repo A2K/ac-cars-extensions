@@ -40,7 +40,7 @@ echo Assetto Corsa root folder: %InstallLocation%
 
 echo Installing shared content to %InstallLocation%\extension\textures\common
 
-robocopy %~dp0assettocorsa\extension\textures\common\a2k %InstallLocation%\extension\textures\common\a2k /E
+@REM robocopy %~dp0assettocorsa\extension\textures\common\a2k %InstallLocation%\extension\textures\common\a2k /E
 
 set "installAll="
 
@@ -80,7 +80,8 @@ for %%c in (%detectedCars%) do (
                 set doInstall=Y
             )
             if "!doInstall!" == "Y" (
-                robocopy %~dp0assettocorsa\content\cars\!%%f!\extension %basePath%\%%c\extension /E
+                echo %%c !%%f!
+                @REM  robocopy %~dp0assettocorsa\content\cars\!%%f!\extension %basePath%\%%c\extension /E
             ) else (
                 echo Skipping !carname!
             )

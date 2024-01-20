@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set "searchFiles=bmw_m3_e30.kn5 bmw_1m.kn5 bmw_m3_e92.kn5 bmw_m4.kn5 bmw_m235i_racing.kn5 bmw_m3_e30_grA.kn5 nissan_gtr.kn5"
+set "searchFiles=bmw_m3_e30.kn5 bmw_1m.kn5 bmw_m3_e92.kn5 bmw_m4.kn5 bmw_m235i_racing.kn5 bmw_m3_e30_grA.kn5 bmw_z4.kn5 nissan_gtr.kn5"
 
 set "bmw_m3_e30.kn5=a2k_bmw_e30_se"
 set "bmw_1m.kn5=a2k_bmw_e82_2011_1m"
@@ -10,7 +10,7 @@ set "bmw_m4.kn5=a2k_bmw_f82_2015_m4"
 set "bmw_m235i_racing.kn5=a2k_bmw_m235i_racing"
 set "bmw_m3_e30_grA.kn5=a2k_dtm1992_bmw_e30_m3_evo3"
 set "nissan_gtr.kn5=a2k_nissan_r35_2014_gtr_nismo"
-
+set "bmw_z4.kn5=a2k_bmw_z4"
 rem Use reg query to get the value of the specified registry key
 for /f "tokens=2*" %%a in ('reg query "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 244210" /v "InstallLocation" ^| find "InstallLocation"') do (
     set "InstallLocation=%%b"
@@ -32,6 +32,7 @@ if "!InstallLocation!" == "" (
 
 if "!InstallLocation!" == "" (
     echo Assetto Corsa not found
+    pause
     exit 1
 )
 
@@ -40,7 +41,7 @@ echo Assetto Corsa root folder: %InstallLocation%
 
 echo Installing shared content to %InstallLocation%\extension\textures\common
 
-@REM robocopy %~dp0assettocorsa\extension\textures\common\a2k %InstallLocation%\extension\textures\common\a2k /E
+robocopy %~dp0assettocorsa\extension\textures\common\a2k %InstallLocation%\extension\textures\common\a2k /E
 
 set "installAll="
 
@@ -81,7 +82,7 @@ for %%c in (%detectedCars%) do (
             )
             if "!doInstall!" == "Y" (
                 echo %%c !%%f!
-                @REM  robocopy %~dp0assettocorsa\content\cars\!%%f!\extension %basePath%\%%c\extension /E
+                robocopy %~dp0assettocorsa\content\cars\!%%f!\extension %basePath%\%%c\extension /E
             ) else (
                 echo Skipping !carname!
             )
@@ -90,3 +91,7 @@ for %%c in (%detectedCars%) do (
 )
 
 endlocal
+
+echo All finished!
+
+pause

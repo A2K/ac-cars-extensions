@@ -1,4 +1,10 @@
-### Extract to a temporary directory and run **INSTALL_EXTENSIONS.bat** to install!
+#### DOWNLOAD
+##### [💾 LATEST](https://codeload.github.com/A2K/ac-cars-extensions/zip/refs/heads/main) or [💾 RELEASE](https://github.com/A2K/ac-cars-extensions/releases/latest)
+
+
+### Extract to a temporary directory and run `INSTALL_EXTENSIONS.bat` to install!
+#### The script copies the shared textures, scans the installed cars and offers to decide which cars to install extensions for.
+##### Alternatively, copy coresponding `extension` directory from `content/cars/a2k_*` to desired car's directory manually. If installing manually, the shared content needs to be installed for extensions to work (`extension/textures/common/a2k`).
 
 ### ⚠️ Do not install using Content Manager!
 
@@ -18,3 +24,43 @@
 
 #### Extra for BMW E92 M3 variants:
 * Aftermarket Android Auto
+
+
+# 🌐 100% Compatible with online play!
+###### Extensions don't affect car checksums as they don't affect physics.
+
+
+### Manual installation:
+* Extract `assettocorsa/extension/textures/common/a2k` to coresponding path in your game install
+* Copy the extensions from `a2k_*` cars to cars of your choise using compatibility table provided below
+  
+### Supported cars
+
+#### Kunos BMW
+| Car directory name  | Extension                   |
+| ------------------- | --------------------------- |
+| bmw_1m              | [a2k_bmw_e82_2011_1m](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e82_2011_1m)         |
+| bmw_1m_s3           | [a2k_bmw_e82_2011_1m](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e82_2011_1m)         |
+| bmw_m3_e30          | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
+| bmw_m3_e30_drift    | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
+| bmw_m3_e30_dtm      | [a2k_dtm1992_bmw_e30_m3_evo3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_dtm1992_bmw_e30_m3_evo3) |
+| bmw_m3_e30_gra      | [a2k_dtm1992_bmw_e30_m3_evo3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_dtm1992_bmw_e30_m3_evo3) |
+| bmw_m3_e30_s1       | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
+| bmw_m3_e92          | [a2k_bmw_e92_2008_m3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e92_2008_m3)         |
+| bmw_m3_e92_drift    | [a2k_bmw_e92_2008_m3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e92_2008_m3)         |
+| bmw_m3_e92_s1       | [a2k_bmw_e92_2008_m3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e92_2008_m3)         |
+| ks_bmw_m235i_racing | [a2k_bmw_m235i_racing](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_m235i_racing)        |
+| ks_bmw_m4           | [a2k_bmw_f82_2015_m4](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_f82_2015_m4)         |
+| ks_bmw_m4_akrapovic | [a2k_bmw_f82_2015_m4](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_f82_2015_m4)         |
+
+### [Arch physics](https://github.com/archibaldmilton/Girellu/tree/master/Releases/Mods/Arch%20Cars%20Public) is supported and recommended
+| Car directory name           | Extension                   |
+| ---------------------------- | --------------------------- |
+| arch_bmw_e30_1986_m3         | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
+| arch_bmw_e30_1986_m3_drift   | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
+| arch_bmw_e30_1990_m3_evo3    | [a2k_bmw_e30_se](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e30_se)              |
+| arch_bmw_e82_2011_1m         | [a2k_bmw_e82_2011_1m](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e82_2011_1m)         |
+| arch_bmw_e92_2008_m3         | [a2k_bmw_e92_2008_m3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_e92_2008_m3)         |
+| arch_bmw_f82_2015_m4         | [a2k_bmw_f82_2015_m4](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_bmw_f82_2015_m4)         |
+| arch_dtm1992_bmw_e30_m3_evo3 | [a2k_dtm1992_bmw_e30_m3_evo3](https://github.com/A2K/ac-cars-extensions/tree/main/assettocorsa/content/cars/a2k_dtm1992_bmw_e30_m3_evo3) |
+

@@ -2,12 +2,12 @@
 /*/
 !/INSTALL_EXTENSIONS.bat
 !/SelectPath.bat
-!/assettocorsa
-/assettocorsa/*
-!/assettocorsa/content/cars/a2k_bmw_e30_se/extension
+# !/assettocorsa
+# /assettocorsa/*
+# !/assettocorsa/content/cars/a2k_bmw_e30_se/extension
 !/assettocorsa/content/cars/a2k_bmw_e82_2011_1m/extension
-!/assettocorsa/content/cars/a2k_bmw_e92_2008_m3/extension
-!/assettocorsa/content/cars/a2k_bmw_f82_2015_m4/extension
-!/assettocorsa/content/cars/a2k_bmw_m235i_racing/extension
-!/assettocorsa/content/cars/a2k_dtm1992_bmw_e30_m3_evo3/extension
-!/assettocorsa/content/cars/a2k_nissan_r35_2014_gtr_nismo/extension
+# !/assettocorsa/content/cars/a2k_bmw_e92_2008_m3/extension/*
+# !/assettocorsa/content/cars/a2k_bmw_f82_2015_m4/extension/*
+# !/assettocorsa/content/cars/a2k_bmw_m235i_racing/extension/*
+# !/assettocorsa/content/cars/a2k_dtm1992_bmw_e30_m3_evo3/extension/*
+# !/assettocorsa/content/cars/a2k_nissan_r35_2014_gtr_nismo/extension/*

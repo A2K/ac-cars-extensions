@@ -48,24 +48,24 @@ set "WORKDIR=%TEMP%\bmw-ext-%RANDOM%\"
 
 @REM mkdir %WORKDIR%\assettocorsa\extension\textures\common\a2k
 
-robocopy "%~dp0assettocorsa\extension\textures\common\a2k" "%WORKDIR%\assettocorsa\extension\textures\common\a2k" /E
+robocopy "%~dp0assettocorsa\extension\textures\common\a2k" "%WORKDIR%\assettocorsa\mods\BMW Extensions\extension\textures\common\a2k" /E
 
 @REM mkdir "%WORKDIR%assettocorsa\content\cars"
 
 set "basePath=%~dp0assettocorsa\content\cars"
 
 for %%c in (%SUPPORTED_CARS%) do (
-    @REM echo "%WORKDIR%assettocorsa\content\cars\%%c\extension"
-    @REM mkdir "%WORKDIR%assettocorsa\content\cars\%%c\extension"
-
     for %%f in (%searchFiles%) do (
         set "filePath=%basePath%\%%c\%%f"
         if exist "!filePath!" (
-            @REM echo "%~dp0assettocorsa\content\cars\!%%f!\extension"
-            robocopy "%~dp0assettocorsa\content\cars\!%%f!\extension" "%WORKDIR%assettocorsa\content\cars\%%c\extension" /E /XF "*.fbx" /XF "*.fbx.ini"
+            robocopy "%~dp0assettocorsa\content\cars\!%%f!\extension" "%WORKDIR%assettocorsa\mods\BMW Extensions\content\cars\%%c\extension" /E /XF "*.fbx" /XF "*.fbx.ini"
         )
     )
 )
+
+echo BMW Extensions > "%WORKDIR%\assettocorsa\mods\BMW Extensions\name.jsgme
+echo Various improvements for stock BMWs > "%WORKDIR%\assettocorsa\mods\BMW Extensions\Description.jsgme
+echo 1.3 > "%WORKDIR%\assettocorsa\mods\BMW Extensions\version.jsgme
 
 SET CURRENTDIR="%cd%"
 
@@ -76,65 +76,10 @@ del "%ARTIFACT%"
 
 7z a "%ARTIFACT%" assettocorsa
 
-echo "%ARTIFACT%"
-
 cd %CURRENTDIR%
 
 RMDIR /s /q %WORKDIR%
 
-exit 0
-
-echo Installing shared content to %InstallLocation%\extension\textures\common
-
-set "installAll="
-
-set "basePath=%InstallLocation%\content\cars"
-
-echo Scanning cars in %basepath%...
-set detectedCars=
-for /d %%i in (%basePath%\*) do (
-    for %%a in (%%i) do for %%b in ("%%~dpa\.") do set "carname=%%~nxa"
-    if /i "!carname:~0,4!" NEQ "a2k_" (
-        for %%f in (%searchFiles%) do (
-            set "filePath=%%i\%%f"
-            set "doInstall="
-            if exist "!filePath!" (
-                set "detectedCars=!detectedCars! !carname!"
-            )
-        )
-    )
-)
-
-echo Found compatible cars:%detectedCars%
-
-for %%c in (%detectedCars%) do (
-    set carname=%%c
-    for %%f in (%searchFiles%) do (
-        set "filePath=%basePath%\%%c\%%f"
-        set "doInstall="
-        if exist "!filePath!" (
-            if !installAll! == 1 (
-                set doInstall=Y
-            ) else (
-                set /p "doInstall=Install extension !%%f! for car !carname! [Y/n/A]?: "
-            )
-
-            if "!doInstall!" == "A" (
-                set installAll=1
-                set doInstall=Y
-            )
-            if "!doInstall!" == "Y" (
-                echo %%c !%%f!
-                robocopy "%~dp0assettocorsa\content\cars\!%%f!\extension" "%basePath%\%%c\extension" /E
-            ) else (
-                echo Skipping !carname!
-            )
-        )
-    )
-)
-
-endlocal
-
-echo All finished!
-
-pause
+echo
+echo %ARTIFACT%
+echo
